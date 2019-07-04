@@ -1,0 +1,44 @@
+@import url("normalize.css");
+$primary_color: gray;
+$secondary_color: darkred;
+$accent_color: darkblue;
+$reverse_color :white;
+/* define mixins to group styles together */
+@mixin redbox {
+  width: 200px;
+  height: 100px;    
+  border: 2px solid red;
+  background-color: pink;
+  box-shadow:5px 5px 10px $secondary_color;
+  border-radius:30px;
+  padding:10px;    
+}
+//mixins can accept parameters to allow for dynamic customization 
+@mixin shaded-box($xoffset, $yoffset, $rounded-corners){
+  box-shadow:$xoffset $yoffset 10px $primary_color;	  
+  border-radius:$rounded-corners;
+  padding:10px;	
+  border:1px solid black;
+  margin:15px;
+  background-color:#9fd3ff;
+}
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 2rem;
+  }
+  
+h2{  
+  @include shaded-box(5px, 5px, 90px);  
+}
+article{
+  @include shaded-box(15px, 15px, 5px);  
+}
+//use @include to apply a set of styles 
+.col-md-6{  
+  @include redbox;
+      
+}
+.navbar-brand {
+    background-color: $accent_color;
+    color:$reverse_color;
+}
