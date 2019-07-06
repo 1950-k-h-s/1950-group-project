@@ -1,0 +1,72 @@
+/*
+	Autor:Halleh Noor-salehi,Kitty Mork, Sasan Pournouri
+	Date:2019-07-07
+	Comp 1950-Web Developement-Group Project
+*/
+@import url("normalize.css");
+$primary_color: gray;
+$secondary_color: rgb(182, 182, 182);
+$accent_color: rgb(53, 53, 82);
+$reverse_color :white;
+$red_color :red;
+$lightgray_color:lightgray;
+$back_color:#233141;
+$header_color:white;
+
+/* define mixins to group styles together */
+@mixin redbox {
+  width: 200px;
+  height: 100px;    
+  border: 2px solid $red_color;
+  background-color:$back_color;
+  box-shadow:5px 5px 10px $secondary_color;
+  border-radius:30px;
+  padding:10px;    
+}
+//mixins can accept parameters to allow for dynamic customization 
+@mixin shaded-box($xoffset, $yoffset, $rounded-corners){
+  box-shadow:$xoffset $yoffset 10px $primary_color;	  
+  border-radius:$rounded-corners;
+  padding:10px;	
+  border:1px solid $secondary_color;
+  margin:15px;
+  background-color:$lightgray_color;
+}
+
+@mixin header-box($xoffset, $yoffset, $rounded-corners){
+  box-shadow:$xoffset $yoffset 10px $primary_color;	  
+  border-radius:$rounded-corners;
+  padding:10px;	
+  border:1px solid black;
+  margin:15px;
+  background-color:$back_color;
+  color:$header_color;
+  padding-left: 3%;
+}
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 2rem;
+  }
+  
+h2,header{  
+  @include header-box(5px, 5px, 90px);  
+}
+h4{
+  @include shaded-box(5px, 5px, 10px);  
+} 
+
+article{
+  @include shaded-box(15px, 15px, 5px);  
+}
+//use @include to apply a set of styles 
+.col-md-6{  
+  @include redbox;
+      
+}
+.navbar-brand {
+    
+    color:black;
+    padding: 7px 7px;
+    
+    
+}
