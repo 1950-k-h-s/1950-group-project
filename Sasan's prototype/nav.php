@@ -10,7 +10,7 @@
                 Lectures
               </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">01: Tools & Standards</a>
+                    <a class="dropdown-item" href="lecture/01.html">01: Tools & Standards</a>
                     <a class="dropdown-item" href="#">02: HTML5</a>
                     <a class="dropdown-item" href="#">03: Advanced CSS</a>
                     <a class="dropdown-item" href="#">04: CSS Layouts</a>
