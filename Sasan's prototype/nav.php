@@ -10,7 +10,7 @@
                 Lectures
               </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="lecture/01.html">01: Tools & Standards</a>
+                    <a class="dropdown-item" href="01.html">01: Tools & Standards</a>
                     <a class="dropdown-item" href="#">02: HTML5</a>
                     <a class="dropdown-item" href="#">03: Advanced CSS</a>
                     <a class="dropdown-item" href="#">04: CSS Layouts</a>
@@ -26,7 +26,7 @@
                 <a class="nav-link" href="#">Resources</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
