@@ -10,7 +10,8 @@ body {
   padding-top: 2rem;
 }
 
-h2, header {
+h2,
+header {
   box-shadow: 5px 5px 10px gray;
   border-radius: 90px;
   padding: 10px;
@@ -45,9 +46,4 @@ article {
   box-shadow: 5px 5px 10px darkred;
   border-radius: 30px;
   padding: 10px;
-}
-
-.navbar-brand {
-  background-color: darkblue;
-  color: white;
 }
