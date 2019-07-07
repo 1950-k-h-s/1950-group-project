@@ -1,6 +1,6 @@
 <footer>
     <ul class="list-inline d-flex justify-content-around">
-        <li class="list-inline-item"><a href="#">Top of Page</a></li>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top of Page</button>
         <li class="list-inline-item"><a href="#">Validate HTML</a></li>
     </ul>
 </footer>
